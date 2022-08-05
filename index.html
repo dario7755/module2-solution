@@ -3,6 +3,7 @@
 <head>
 <link rel="stylesheet" href="css/style1.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Module-2 DJ Solution</title>
 <style>
 * {
   box-sizing: border-box;
@@ -48,7 +49,7 @@ html {
 }
 
 h1{
-  width: 60%;
+  width: 80%;
   margin-left: 100px;
   margin-top: 100px;
   margin-bottom: 100px;
@@ -71,112 +72,111 @@ h1{
 }
 
 /* For Mobile-phones: */
-@media only screen and (max-width: 767px) {
-  [class*="col-"] {
-  width: 100%;
- }
-}
-
-/* For Tablets: */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 50%;}
-  .col-s-7 {width: 58.33%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
+@media (max-width: 767px) {
+ #p1 { width: 100%; }
+ #p2 { width: 100%; }
+ #p3 { width: 100%; }
 }
 
 /* For Desktop: */
-@media only screen and (min-width: 992px ) {
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
+@media (min-width: 992px ) {
+  #p1 {
+	width: 33%;
+    height: 300px;
+	color: rgb(0,10,20);
+   }
+   #p2 {
+	width: 33%;
+    height: 300px;
+	color: rgb(0,10,20);
+   }
+   #p3 {
+	width: 33%;
+    left:50px;
+    height: 300px;
+   }
+  .col-1 {width: 33%;}
+  .col-2 {width: 33%;}
+  .col-3 {width: 33%;}
 }
 
-/* For Paragraph p1 */
+/* For Tablets: */
+@media (min-width: 768px) and (max-width: 991px) {
+ #p1 { width: 50%; }
+ #p2 { width: 50%; }
+ #p3 { width: 50%; }
+  .col-1 {width: 50%;}
+  .col-2 {width: 50%;}
+  .col-3 {width: 100%;}
+}
+
+/* For Paragraphs */
 #p1 {
+	text-align: left;
 	top: 400px;
 	margin-top: 200 px;
-	font-size: 28px;
-	color: rgb(100,80,50);
-	padding: 140px;
-	left: 140px;
+	font-size: 26px;
+	padding: 40px;
+	left: 100px;
 }
 #p2 {
+	text-align: left;
 	font-size: 26px;
 	color: rgb(100,50,10);
-	padding: 140px;
+	padding: 50px;
 	left: 100px;
 }
 #p3 {
-	font-size: 24px;
+	text-align: left;
+	font-size: 26px;
 	color: rgb(80,50,30);
-	padding: 140px;
+	padding: 60px;
 	left: 100px;
 }
-#p4 {
-	font-size: 22px;
-	color: rgb(80,50,30);
-	padding: 140px;
-	left: 100px;
-}
-
 
 #div1 {
+  font-size: 26px;
   color: rgb(50,40,30);
-  font-size: 24px;
-  padding: 30px;
-  border: 1px solid black;
+  padding: 40px;
   position: relative;
   left: 550px;
   background-color: lightblue;
-  width: 160px;
-  height: 80px;
+  width: 200px;
+  height: 100px;
   opacity: 0.7;
+  border-style: solid;
+  border-color: white;
 }
 #div2 {
-  font-size: 24px;
+  font-size: 26px;
   color: rgb(40,30,20);
-  padding: 30px;
+  padding: 40px;
   left: 550px;
-  border: 1px solid black;
   background-color: lightblue;
-  width: 160px;
-  height: 80px;
+  width: 200px;
+  height: 100px;
   position: relative;
   top: 40px;
   bottom: 40px;
   opacity: 0.8;
+  border-style: solid;
+  border-color: white;
 }
 #div3 {
-  font-size: 24px;
+  font-size: 26px;
   color: rgb(30,20,10);	
   margin-bottom: 100 px;
   top: 80px;
-  padding: 30px;
+  padding: 40px;
   left: 550px;
   border: 1px solid black;
   background-color: lightblue;
-  width: 160px;
-  height: 80px;
+  width: 200px;
+  height: 100px;
   position: relative;
   opacity: 0.9;
+  border-style: solid;
+  border-color: white;
 }
 #div4 {
     padding:50px;
@@ -240,11 +240,7 @@ h1{
   float: left;
   padding: 20px;
 }
-.menu {
-  width: 50%;
-  float: left;
-  padding: 20px;
-}
+
 .right {
   width: 25%;
   float: left;
@@ -257,49 +253,299 @@ h1{
   float: left;
   padding: 100px;
 }
+.col-1 {
+    padding: 10px;
+    width: 30%;
+	background-color: lightblue;
+	opacity: 0.7;
+  }
+.col-2 {
+    padding:10px;
+    width: 31%;
+	background-color: lightblue;
+	opacity: 0.8;
+  }
+.col-3 {
+    padding:10px;
+    width: 32%;
+	background-color: lightblue;
+	opacity: 0.9;
+  }
+.col-0 {
+    width: 10px;
+	background-color: white;
+  }
+.col-7 {
+    left: 10px;
+    width: 10px;
+	background-color: white;
+  }
+.col-10 {
+    width: 20px;
+	background-color: white;
+  }
+.menu-a {
+  width: 50%;
+  float: left;
+  padding: 20px;
+}
+.menu-b {
+  width: 50%;
+  float: left;
+  padding: 20px;
+}
+.m0{
+    width: 5%;
+}
+
+.m1{
+	text-align: center;
+	padding: 20px;
+	background-color:#def;
+	color: rgb(100,100,100);	
+	font-size: 24px;
+	opacity: 0.8;	
+	padding: 20px;
+	background-color:#def;
+	color: rgb(100,100,100);	
+	font-size: 24px;
+	opacity: 0.8;
+}
+
+.m2{
+	text-align: center;
+	padding: 20px;
+	background-color:#def;
+	color: rgb(100,100,100);	
+	font-size: 24px;
+	opacity: 0.8;	
+	padding: 20px;
+	background-color:#eff;
+	color: rgb(100,100,100);	
+	font-size: 24px;
+	opacity: 0.9;
+}
+.m3{
+	text-align: center;
+	padding: 20px;
+	background-color:#eef;
+	opacity: 0.95;
+	color: rgb(100,100,100);	
+	font-size: 24px;
+}
+
+.row0{	
+	top: 100 px;
+    bottom: 200px;
+	width: 80%;
+	margin-left: 100px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	background-color: white;
+	padding: 30px;
+}
+.h1{
+  width: 80%;
+  height: 100px;
+  top: 200 px;
+  bottom: 200px;
+  margin-left: 100px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: #fff;
+  border-style: solid;
+  border-color: white;
+}
+.row1{
+	top: 100 px;
+    bottom: 100px;
+	width: 80%;
+	height: 300px;
+	background-color: white;
+	border-style: solid;
+	border-color: white;
+}
+.row2{
+	top: 50 px;
+    left: 100 px;
+    bottom: 100px;
+	width: 80%;
+	height: 200px;
+	background-color: white;
+	border-style: solid;
+	border-color: white;
+}
+.row3{
+	top: 100 px;
+    left: 100 px;
+    bottom: 100px;
+	width: 80%;
+	height: 300px;
+	background-color: white;
+	border-style: solid;
+	border-color: white;
+}
+.row4{
+	top: 100 px;
+    left: 100 px;
+    bottom: 100px;
+	width: 80%;
+	height: 400px;
+	background-color: white;
+	border-style: solid;
+	border-color: white;
+}
+.row10{
+	top: 50 px;
+    left: 100 px;
+    bottom: 100px;
+	width: 80%;
+	height: 150px;
+	background-color: white;
+	border-style: solid;
+	border-color: white;
+}
+
+.e1{
+	font-size: 28px;
+	text-align: center;
+	font-weight: bold;
+	font-style: italic;
+	padding: 20px;
+	color: rgb(0,10,50);	
+	font-size: 28px;
+	opacity: 0.7;	
+}
+.e2{
+	font-size: 28px;
+	text-align: center;
+	font-weight: bold;
+	font-style: italic;
+	padding: 20px;
+	color: rgb(10,50,100);	
+	background-color: lightblue;
+	opacity: 0.8;	
+}
+.e3{
+	font-size: 28px;
+	text-align: center;
+	font-weight: bold;
+	font-style: italic;
+	padding: 20px;
+	color: rgb(50,70,100);	
+	background-color: lightblue;
+	opacity: 0.9;	
+}
+#a1{
+	text-align: center;
+	padding: 20px;
+	color: rgb(0,10,50);	
+	font-size: 26px;
+	font-style: italic;
+}
+#a2{
+	text-align: center;
+	padding: 20px;
+	color: rgb(0,10,50);	
+	font-size: 26px;
+	font-style: italic;
+}
+#a3{
+	text-align: center;
+	padding: 20px;
+	color: rgb(0,10,50);	
+	font-size: 26px;
+	font-style: italic;
+}
+.s1 { 
+  width: 30%;	
+  margin-left: 130px;
+  font-size: 28px;
+  text-align: right;
+  background-color: rgb #eef;	
+  opacity: 0.8;	
+}
+.s2 { 
+  width: 33%;	
+  margin-left: 130px;
+  font-size: 28px;
+  text-align: right;
+  background-color: rgb #eff;
+  opacity: 0.85;		
+}
+.s3 { 
+  left: 30px;	
+  width: 40%;	
+  margin-left: 130px;
+  font-size: 28px;
+  text-align: right;
+  background-color: rgb #eef;	
+  opacity: 0.9;	
+}
 
 </style>
 </head>
 <body>
 
 <h1> My Module-2 Coding Project by DJ</h1>
-  <div id="div1"> Element 1 </div>
-  <div id="div2"> Element 2 </div>
-  <div id="div3"> Element 3 </div>
 
-  <div id="div4">   </div>
+<div id="div5">   </div>
+<div class="left">   </div>
 
-  <div class="left">   </div>
-
-<div class="menu">   
-  <div id="m" class="row">
-  <div id="div5">   </div>
-  <div id="m1" class="column" style="background-color:#aaa;">
+<div class="menu-a">   
+<div id="m" class="row">
+    
+   <div class="col-1">
+   <div class="m1" >
     <h2> Menu 1</h2>
-    <p> Option 1 </p>
+    <p id="a1"> Action 1 </p>
+     </div>
   </div>
-  <div id="div5">   </div>
-  <div id="m2" class="column" style="background-color:#bbb;">
+
+  <div class="col-0"> </div>
+
+  <div class="col-2">
+
+  <div class="m2" >
     <h2> Menu 2</h2>
-    <p>Option 2</p>
+    <p id="a2"> Action 2</p>
+    </div>
   </div>
-  <div id="div5">   </div>
-  <div id="m3" class="column" style="background-color:#ccc;">
+<div class="col-0"> </div>
+<div class="col-3">   
+  <div class="m3" style="background-color:#cde;">
     <h2> Menu 3</h2>
-    <p> Option 3</p>
-  </div>
-  <div id="div5">   </div>
-  <div id="m4"  class="column" style="background-color:#ddd;">
-    <h2> Menu 4</h2>
-    <p> Option 4</p>
+    <p id="a3"> Action 3</p>
   </div>
  </div>
-</div>
-<div class="text">   
-<p id="p1"> My 1. paragraph with some text.</p>
-<p id="p2"> My 2. paragraph with also some text.</p>
-<p id="p3"> My 3. paragraph with some other text.</p>
-<p id="p4"> My 4. paragraph with remaining text.</p>
-</div>
+
+<div class="row1"> </div>
+   
+<div class="col-1"> <p class="s1"> Star1 </p> </div>
+<div class="col-10"> </div>
+<div class="col-1"> <p class="s2"> Star2 </p> </div>
+<div class="col-10"> </div>
+<div class="col-1"> <p class="s3"> Star3 </p> </div>
+
+<div class="row10"> </div>
+
+<div class="col-1"> <p id="p1"> This is 1.paragraph with some text.</p> </div>
+
+<div class="col-0"> </div>
+
+<div class="col-2"> <p id="p2"> This is 2.paragraph with also some text.</p> </div>
+<div class="col-0"> </div>
+
+<div class="col-3"> <p id="p3"> This is 3.paragraph with some other text.</p> </div>
+
+<div class="row1"> </div>
+<div class="row2"> </div>
+<div class="col-1">	<p class="e1"> Element 1 </p>  </div>
+<div class="col-0"> </div>
+<div class="col-1">	<p class="e2"> Element 2 </p>  </div>
+<div class="col-0"> </div>
+<div class="col-1">	<p class="e3"> Element 3 </p>  </div>
+<div class="row3"> </div>
+
 </body>
 </html>
