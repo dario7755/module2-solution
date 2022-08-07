@@ -11,7 +11,7 @@
 </div>
 <div class="dt">
 <section class="title">
-	<p class="t1"> Module-2 Coding Project by DJ is on this www adress  
+	<p class="tm"> Module-2 Coding Project by DJ is on this www adress  
 	<a id="a1" href="https://dario7755.github.io/module2-solution/" 
 	target="_blank" title="Module-2 Coding Project by DJ"> DJ WWW </a>
 	</p>
@@ -20,10 +20,14 @@
 </section>
 
 <style>
-
+* {
+  box-sizing: border-box;
+  margin:30;
+  padding: 0;
+}
 .start{
 	width: 100%;	
-	height: 50 px;	
+	height: 350px;	
 	background-color: rgb(192,192,192);
 	border: 1px solid black;
 	opacity: 0.7;
@@ -31,12 +35,15 @@
 
 .title{
 	width: 100%;	
-	height: 300 px;	
+	height: 250 px;	
     margin: auto;
     margin-top: 100 px;	
     margin-bottom: 50 px;	
 	background-color: white;
 	color: black;
+	border-color: black;
+	border-style: solid;
+    border-width: 1px;
 }
 
 #a1{
@@ -51,7 +58,7 @@
 	margin-top: 50px;
 	text-align: center;
 	width: 75%;	
-	height: 10%;	
+	height: 30%;	
 	background-color: white;
 	border-color: black;
 	border-style: solid;
@@ -67,7 +74,7 @@
 	margin-top: 50px;
 	margin-bottom: 30px;
 	text-align: center;
-	font-size: 30px;
+	font-size: 34px;
 	color: rgb(10,20,30);
 }
 
@@ -84,9 +91,26 @@
 	left: 50px;
 	top: 50px;
 	color: black;
-	font-size: 30px;
+	font-size: 34px;
 	color: rgb(50,30,10);
-	border: 1px solid black;
+    border: 1px solid black;	
+}
+.tm{
+    width: 80%;
+	height: 60px;	
+	padding: 10 px;
+	text-align: center;
+	margin: auto;
+	margin-left: 1px;
+	margin-right: 1px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background-color: rgb (250,250,250);
+	left: 50px;
+	top: 50px;
+	color: black;
+	font-size: 34px;
+	color: rgb(50,30,10);
 }
 
 h1{
@@ -103,11 +127,6 @@ h1{
   color: rgb(50,30,10);
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   border: 1px solid black;
-}
-
-
-* {
-  box-sizing: border-box;
 }
 
 .row::after {
@@ -167,24 +186,62 @@ html {
 
 /* For Desktop: */
 @media (min-width: 992px ) {
-  .r{ width: 3%; } 
+   .start{
+	width: 100%;	
+	height: 50 px;	
+	background-color: rgb(192,192,192);
+	border: 1px solid black;
+	opacity: 0.7;
+	}
+
+  .r{ width: 3%; }
+ 
+  .col-lg-1{
+    float: left;
+    width: 30%;
+  }
+
+ .col-md-1{
+    float: left;
+    width: 40%;
+  }
+  .col-md-2{
+    float: left;
+    width: 40%;
+  }
+  .col-md-3{
+    float: left;
+    width: 55%;
+  }
+ .col-md-5{
+    padding-left:900px;
+    float: left;
+    width: 70%;
+  }
+
+  .col-md-6{
+    width: 40%;
+  }
 
   .box { 
      background-color: white;
+     padding: 100px;
      opacity: 0.8;  
 	 border: 1px solid black;
-     height: 1200px;	
+     height: 3000px;
+     width:3000px;
    }
   .sec{
 	width: 90%;
     height: 200px;
 	background-color: rgb(192,192,192);
+    font-size: 34px;
 	opacity: 0.7;  
    }
    
   .sec-1{  
 	width: 30%;
-    height: 440px;
+    height: 400px;
 	background-color: rgb(192,192,192);
 	opacity: 0.7; 
 	text-align: left; 
@@ -193,18 +250,18 @@ html {
    }
 	
   .sec-2{
-	width: 30%;
-    height: 440px;
+	width:30%;
+    height: 400px;
 	background-color: rgb(192,192,192);
 	opacity: 0.7;  
-    margin-left: 600px;
+    margin-left: 300px;
     margin-bottom: 100px;
     border: 1px solid black;
    }
 
   .sec-3{
 	width: 30%;	
-	height: 440px;
+	height: 400px;
 	margin-left: 1100px;
 	margin-bottom: 200px;
 	font-size: 28px;
@@ -248,9 +305,9 @@ html {
 
 /* For Tablets: */
 @media (min-width: 768px) and (max-width: 991px) {
- #p1 { width: 50%; }
- #p2 { width: 50%; }
- #p3 { width: 50%; }
+	#p1 { width: 50%; }
+	#p2 { width: 50%; }
+	#p3 { width: 50%; }
   .col-1 {width: 50%;}
   .col-2 {width: 50%;}
   .col-3 {width: 100%;}
@@ -555,16 +612,7 @@ html {
 	border-style: solid;
 	border-color: white;
 }
-.row{
-	width: 80%;
-	height: 150px;
-	top: 50 px;
-    left: 100 px;
-    bottom: 100px;
-	background-color: white;
-	border-style: solid;
-	border-color: white;
-}
+
 
 .e1{
 	font-size: 28px;
@@ -600,7 +648,7 @@ html {
 	text-align: center;
 	padding: 20px;
 	color: rgb(0,10,50);	
-	font-size: 26px;
+	font-size: 30px;
 	font-style: italic;
 }
 #a2{
@@ -635,7 +683,7 @@ html {
   margin-top:50px;		
   margin-left:111px;
   margin-bottom: 40px;		
-  font-size: 28px;
+  font-size: 30px;
   color: rgb(0,5,10);
   text-align: left;
   background-color: rgb (100,0,200);
@@ -649,7 +697,7 @@ html {
   margin-top:55px;		
   margin-left: 150px;
   margin-bottom: 40px;		
-  font-size: 30px;
+  font-size: 34px;
   color: rgb(0,5,10);
   text-align: left;
   background-color: rgb (0,150,50);
@@ -663,7 +711,7 @@ html {
   margin-top: 40px;		
   margin-left: 880px;
   margin-bottom: 34px;		
-  font-size: 25px;
+  font-size: 38px;
   color: rgb(0,5,10);
   text-align: left;
   background-color: rgb (0,0,100);
@@ -677,7 +725,7 @@ html {
   margin-top: 10px;		
   margin-left: 270px;
   margin-bottom: 40px;		
-  font-size: 30px;
+  font-size: 40px;
   color: rgb(0,5,10);
   text-align: center;
   background-color: rgb (0,0,100);
@@ -685,26 +733,26 @@ html {
 }
 
 .n2 { 
-  width: 50%;
+  width: 40%;
   height: 30%;	
   margin: auto;
   margin-top: 10px;		
-  margin-left: 270px;
+  margin-left: 350px;
   margin-bottom: 40px;		
-  font-size: 30px;
+  font-size: 40px;
   color: rgb(0,5,10);
   text-align: center;
   background-color: rgb (0,0,100);
   opacity: 0.8;	
 }
 .n3 { 
-  width: 50%;
+  width: 40%;
   height: 30%;	
   margin: auto;
   margin-top: 10px;		
-  margin-left: 270px;
+  margin-left: 355px;
   margin-bottom: 40px;		
-  font-size: 30px;
+  font-size: 40px;
   color: rgb(0,5,10);
   text-align: center;
   background-color: rgb (55,0,100);
@@ -721,6 +769,18 @@ html {
   opacity: 0.9;	
 }
 
+.t1{ 
+  left: 30px;	
+  width: 40%;	
+  margin: auto;
+  margin-top:55px;		
+  margin-left: 150px;
+  margin-bottom: 40px;		
+  font-size: 34px;
+  text-align: left;
+  background-color: rgb #eef;	
+}
+
 #m1{
 	width: 80%;
 	height: 150px;
@@ -731,14 +791,9 @@ html {
     padding: 100px;
 } 
 
-.box { 
-	border: 1px solid black;
-    height: 1100px;	
-}
-
-.sec-2 { 
-  width: 99%;	
-  margin-left: 600px;
+.sec-1 { 
+  width: 55%;	
+  margin-left:200px;
   margin-bottom: 200px;
   font-size: 28px;
   text-align: left;
@@ -747,16 +802,31 @@ html {
   opacity: 0.8;	
 }
 
+.sec-2 { 
+  width: 55%;	
+  margin-left: 50px;
+  margin-bottom: 100px;
+  font-size: 28px;
+  text-align: left;
+  background-color: rgb (200,200,200);
+  border: 1px solid black;	
+  opacity: 0.8;	
+}
+
 .sec-3 { 
-  width: 99%;	
-  margin-left: 900px;
+  width: 40%;	
+  margin-left:100px;
+  margin-top: 50px;
+  margin-bottom: 200px;
   font-size: 28px;
   text-align: left;
   background-color: rgb(200,200,200);
   border: 1px solid black;	
   opacity: 0.9;	
 }
-
+.row {
+  width: 100%;
+}
 
 </style>
 
@@ -771,24 +841,31 @@ html {
     </section> 
 </div>
 
-<section class="sec-1" title="Star1">
-    <h1 class="n1">Star1</h1>
+<div class="row">
+	<div class="col-md-1">
+	<section class="sec-1" title="Star1">
+		<h1 class="n1">Star1</h1>
 	<section class="sec">
-	   <p class="s1" > Stellae sunt pretiosus, inaestimabilis, unica et originalia . . . </p> 
+	   <p class="s2"> Stellae sunt pretiosus, inaestimabilis, unica et originalia . . . </p> 
     </section>
+	</div>
 
 	<p class="p0" >  </p> 
 
+	<div class="col-md-2">
     <section class="sec-2" title="Star2">
 		<h1 class="n2">Star2</h1>	
 		<p  class="s2"> Stellae sunt pretiosae, inaestimabilis, unica et originalia . . . </p>  
-   </section> 
+	</section> 
+	</div>
 
+	<div class="col-md-3">
     <section class="sec-3" title="Star3">
 		<h1 class="n3">Star3</h1>	
 		<p  class="s2"> Stellae sunt pretiosae, inaestimabilis, unica et originalia . . . </p>  
-   </section> 
-
+	</section> 
+	</div>
+</div>
 </section>
 
 </div>
