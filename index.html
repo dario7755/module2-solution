@@ -7,16 +7,129 @@
 
 <style>
 
+* {
+  box-sizing: border-box;
+}
+h1 {
+  margin-bottom: 15px;
+}
+
+.pg-1{
+     width: 100%;
+     height: 100%;
+     background-color: white;
+   }
+
+[class*="col-"] {
+  width: 80%;
+}
+
+
+/****** Mobile-phones  ******/
+@media (max-width: 767px) {
+   
+  .pg-1{
+     width: 100%;
+     height: 100%;
+   } 
+  .col-sm-1, col-sm-2, col-sm-3 {
+       width: 100%;
+   }
+   .item-1-m, item-2-m, item-3-m {	
+	width:100%; }
+
+.row-m {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  left: 10px;
+  right: 10px;
+  top: 10px; 
+  background-color: white;
+}
+    
+.item-1-m, item-2-m, item-3-m {	
+    height: 400px;
+    position: relative;
+	top: 25px;
+    left: 5px;
+	bottom: 100px;  
+    background-color: rgb(195,195,195);
+    opacity: 0.9;
+    margin-left: 5px;
+    margin-right: 5px;
+	margin-top: 2px;
+	padding: 10px;
+    font-family: Times;
+    font-style: normal; 
+    font-size: 24px;
+    text-align: center;
+	border: 1px solid black;
+  }
+
+  #p1-m, #p2-m, #p3-m {
+   width: 80%;
+   height: 100px;
+   position: relative;
+   top: 50px;
+   right: 10px;
+   left: 20px;
+   color: black;
+   font-family: Times;
+   font-style: normal; 
+   font-size: 24px;
+   text-align: center;
+   background-color: rgb(195,195,195);
+   }
+   
+  #hd1-m{
+  width: 80%;
+  position: relative;
+  left: 10px;
+  padding:50px;
+  margin-right: auto;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-family: Times;
+  font-style: normal; 
+  font-size: 30px;
+  text-align: center; 
+  background-color: white;
+ }
+
+  #hd1, #hd1-t { display: none; }
+  #item-1, #item-1-t { display: none; }
+  #item-2, #item-2-t { display: none; }
+  #item-3, #item-3-t { display: none; }
+  #sta1, #sta1-t { display: none; }
+  #sta2, #sta2-t { display: none; }
+  #sta3, #sta3-t { display: none; }
+  #p1, #p2, #p3 { display: none; }
+  #p1-t, #p2-t, #p3-t { display: none; }
+ 
+} /****** @media for Mobile-phones end ******/
 
 
 /********** Desktop view **********/
 
 @media only screen and (min-width: 992px) {
+
+.row-d {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  left: 10px;
+  right: 10px;
+  top: 10px; 
+  background-color: white;
+}
+
 .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
-    float: left;
+   float: left;
    background-color: rgb(195,195,195);
    border: 1px solid black;	
   }
+
   .col-lg-1 {
     width: 33%;
   }
@@ -44,16 +157,14 @@
   background-color: white;
 }
 
-/**** .item-1 ****/
-
 .item-1 {	
-	width: 31%;
-    height: 300px;
+   width: 30%;
+    height: 280px;
     position: relative;
 	top: 25px;
     left: 5px;
 	bottom: 100px;  
-    background-color: rgb(195,195,195);
+    /* background-color: rgb(195,195,195); */
     opacity: 0.9;
     margin-left: 5px;
     margin-right: 5px;
@@ -61,38 +172,55 @@
 	padding: 10px;
 	border: 1px solid black;
   }
+/**** .item-1 ****/
 
-#p1 {
+
+ #p1, #p2, #p3 {
    width: 80%;
    height: 100px;
    position: relative;
-   top: 100px;  
+   top: 50px;
    right: 10px;
-   left: 30px;
-   background-color: rgb(195,195,195);
-}
+   left: 20px;
+   color: black;
+   font-family: Times;
+   font-style: normal; 
+   font-size: 24px;
+   text-align: left;
+   /* background-color: rgb(195,195,195); */
+   }
 
-#sta1{
-  background-color: #ff00ff;
-  width: 30%;
-  height: 50px;	
+#sta1, #sta2, #sta3 { 
+  width: 40%;
+  height: 80px;	
   padding: 25px; 
   margin-bottom: 40px;
   font-family: Times;
   font-style: normal; 
-  font-size: 30px;
+  font-size: 22px;
   text-align: center; 
   position: absolute;
   right: 1px; 
   top: 1px;
   border: 1px solid black;	
+} 
+#sta1{
+  background-color: #ff00ff;
 }
+
+#sta2{
+  background-color: #ffff00;
+} 
+#sta3{
+  background-color: #fff8dc;
+}
+
 
 /**** .item-2 ****/
 
 .item-2 {
     width: 30%; 
-    height: 290px; 
+    height: 280px; 
     position: relative;
 	top: 25px;
     left: 25px;
@@ -106,37 +234,10 @@
     border: 1px solid black;
   }
 
-#p2 {	
-   width: 80%;
-   height: 100px;
-   position: relative;
-   top: 100px;  
-   right: 10px;
-   left: 40px;
-   color: black;
-   background-color: rgb(195,195,195);
-}
-
-#sta2{
-  background-color: #ffff00;
-  width: 30%;
-  height: 50px;	
-  padding: 25px; 
-  margin-bottom: 40px;
-  font-family: Times;
-  font-style: normal; 
-  font-size: 30px;
-  text-align: center; 
-  position: absolute;
-  right: 1px; 
-  top: 1px;
-  border: 1px solid black;	
-} 
-
 /**** .item-3 ****/
 .item-3 {
     width: 30%;
-    height: 270px; 
+    height: 280px; 
     position: relative;
     top: 25px;
     left: 40px;
@@ -151,42 +252,6 @@
     border: 1px solid black;
   }
 
-#sta3{
-  background-color: #fff8dc;
-  width: 30%;
-  height: 50px;	
-  padding: 25px; 
-  margin-bottom: 40px;
-  font-family: Times;
-  font-style: normal; 
-  font-size: 30px;
-  text-align: center; 
-  position: absolute;
-  right: 1px; 
-  top: 1px;
-  border: 1px solid black;	
-}
-	  
-#p3 {	
-    background-color: rgb(195,195,195);
-    width: 80%;
-   height: 100px;
-   position: relative;
-   top: 100px;  
-   right: 10px;
-   left: 40px;
-   color: black;
-}
-
-#row {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  left: 10px;
-  right: 10px;
-  top: 10px; 
-  border: 1px solid black;
-}
 
 .s1{
   border: 1px solid black;
@@ -209,9 +274,8 @@
 #p1-t, #p2-t, #p3-t { display: none; }
 #p1-m, #p2-m, #p3-m { display: none; }
 
+ } /* .sec-d */
 } /***** Desktop view end ******/
-
- 
 
 /********* Tablet view *********/
 @media only screen and (min-width: 768px) and (max-width: 991px) { 
@@ -246,44 +310,7 @@
     font-size: 24px; 
 	border: 1px solid black;
   }
-  .item-2-t {
-    width: 40%; 
-    height: 190px; 
-    position: relative;
-	top: 25px;
-    left: 30px;
-	bottom: 100px;
-    background-color: rgb(195,195,195);
-    opacity: 0.8;
-    margin-left: 10px;
-	margin-bottom: 5px;
-	margin: auto;
-	padding: 15px;
-    font-family: Times;
-    font-style: normal; 
-    font-size: 24px;
-    border: 1px solid black;
-  }
-  .item-3-t {
-    width: 82%;
-    height: 200px; 
-    position: relative;
-    top: 40px;
-    left: 25px;
-	bottom: 100px;
-    background-color: rgb(195,195,195);
-	opacity: 0.8;
-	margin-top: 10px;
-    margin-left: 40px;
-    margin-bottom: 0px;
-	margin: auto;
-    padding: 25px;
-    font-family: Times;
-    font-style: normal; 
-    font-size: 24px;
-    border: 1px solid black;
-  }
-
+  
   #hd1-t{
   width: 80%;
   position: relative;
@@ -299,7 +326,7 @@
   background-color: white;
   }
 
-  #p1-t, p2-t, p3-t {
+  #p1-t, #p2-t, #p3-t {
    width: 80%;
    height: 100px;
    position: absolute;
@@ -387,95 +414,31 @@
   #sta3, #sta3-m { display: none; }
   #p1, #p2, #p3 { display: none; }
   #p1-m, #p2-m, #p3-m { display: none; }
-
-  } 
-}  /****** End of @media of Tablet view ******/
-
-/****** for Mobile-phones: ******/
-@media (max-width: 767px) {
-  .col-sm-1 {
-    width: 100%;
   }
-  .col-sm-2 {
-    width: 100%;
-  }
-  .col-sm-3 {
-    width: 100%;
-  }
-.item-1-m, item-2-m, item-3-m {	
-	width: 80%;
-    height: 300px;
-    position: relative;
-	top: 25px;
-    left: 5px;
-	bottom: 100px;  
-    background-color: rgb(195,195,195);
-    opacity: 0.9;
-    margin-left: 5px;
-    margin-right: 5px;
-	margin-top: 2px;
-	padding: 10px;
-    font-family: Times;
-    font-style: normal; 
-    font-size: 24px;
-    text-align: center;
-	border: 1px solid black;
-  }
-
-  #p1-m, #p2-m, #p3-m {
-   width: 80%;
-   height: 100px;
-   position: relative;
-   top: 100px;  
-   right: 10px;
-   left: 40px;
-   color: black;
-   font-family: Times;
-   font-style: normal; 
-   font-size: 30px;
-   text-align: center;
-   background-color: rgb(195,195,195);
-   }
-   
-  #hd1-m{
-  width: 80%;
+#row-t1, #row-t2 {
+  width: 100%;
+  height: 100%;
   position: relative;
   left: 10px;
-  padding:50px;
-  margin-right: auto;
-  margin-left: 20px;
-  margin-top: 20px;
-  font-family: Times;
-  font-style: normal; 
-  font-size: 30px;
-  text-align: center; 
+  right: 10px;
+  top: 10px; 
   background-color: white;
 }
-
-  #hd1, #hd1-t { display: none; }
-  #item-1, #item-1-t { display: none; }
-  #item-2, #item-2-t { display: none; }
-  #item-3, #item-3-t { display: none; }
-  #sta1, #sta1-t { display: none; }
-  #sta2, #sta2-t { display: none; }
-  #sta3, #sta3-t { display: none; }
-  #p1, #p2, #p3 { display: none; }
-  #p1-t, #p2-t, #p3-t { display: none; }
-
-}
-/****** @media for Mobile-phones end ******/
+ 
+}  /****** End of @media of Tablet view ******/
 
 </style>
 
 </head>
 
-<body>
- 
+<body class="pg-1">
   <header id="hd1">   
 	<h1 >Meny</h1>
   </header>  
-  
-  <section id="sec1"> 
+   <section class="item1">
+   <div class="row-d">
+   <div class="row-t1">  
+   <div class="row-m">  
 	<div class="item-1-t item-1-m item-1 col-lg-3 col-md-1 col-sm-1"> 
         <div id="sta1"> Stella 1  </div>   
         <div id="sta1-t"> Stella 1 </div>  
@@ -483,8 +446,10 @@
 		<p id="p1"> Stellae sunt pretiosae, inaestimabilis, unica et originalia . . . </p>   
         <p id="p1-t">Le stelle sono preziose, inestimabili, uniche e originali . . .  </p>  
         <p id="p1-m">Le stelle sono preziose, inestimabili, uniche e originali . . .  </p>  
-	</div>
-        
+	  </div>
+     </div> 
+    
+    <div class="row-m"> 
 	<div class="item-2-m item-2-t item-2 col-lg-3 col-md-2 col-sm-2"> 
         <div id="sta2">Stella 2</div>   
 		<div id="sta2-t">Stella 2</div> 
@@ -492,8 +457,12 @@
 		<p id="p2">Le stelle sono preziose, inestimabili, uniche e originali . . .  </p>
         <p id="p2-t">Le stelle sono preziose, inestimabili, uniche e originali . . .  </p>  
         <p id="p2-m">Le stelle sono preziose, inestimabili, uniche e originali . . .  </p>  
+     </div>
+    </div> 
    </div>
- 
+
+   <div class="row-t2">  
+   <div class="row-m"> 
     <div class="item-3-m item-3-t item-3 col-lg-3 col-md-3 col-sm-3">     
         <div id="sta3">Star 3</div> 
 		<div id="sta3-t">Star 3</div> 
@@ -501,8 +470,11 @@
 		<p id="p3"> Stars are precious, priceless, unique and original . . . </p> 
         <p id="p3-t"> Stars are precious, priceless, unique and original . . . </p> 
         <p id="p3-m"> Stars are precious, priceless, unique and original . . . </p> 
-     </div>
-   </section>
+      </div>
+     </div> 
+    </div> 
 
+    </div> 
+    </section>
 </body>
 </html>
