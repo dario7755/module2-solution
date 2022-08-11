@@ -40,7 +40,7 @@ h1 {
 
 .row-m {
   width: 100%;
-  height: 100%;
+  height: 50%;
   position: relative;
   left: 10px;
   right: 10px;
@@ -106,6 +106,9 @@ h1 {
   #sta3, #sta3-t { display: none; }
   #p1, #p2, #p3 { display: none; }
   #p1-t, #p2-t, #p3-t { display: none; }
+  
+  #row-d, #row-t1, #row-t2 { display: none; }
+  .row-d, row-t1, row-t2 { display: none; }
  
 } /****** @media for Mobile-phones end ******/
 
@@ -174,7 +177,6 @@ h1 {
   }
 /**** .item-1 ****/
 
-
  #p1, #p2, #p3 {
    width: 80%;
    height: 100px;
@@ -182,7 +184,7 @@ h1 {
    position: relative;
    top: 50px;
    right: 10px;
-   left: 20px;
+   left: 20px;-
    color: black;
    font-family: Times;
    font-style: normal; 
@@ -253,7 +255,6 @@ h1 {
     border: 1px solid black;
   }
 
-
 .s1{
   border: 1px solid black;
   }
@@ -274,11 +275,16 @@ h1 {
 #sta3-t, #sta3-m { display: none; }
 #p1-t, #p2-t, #p3-t { display: none; }
 #p1-m, #p2-m, #p3-m { display: none; }
-
  } /* .sec-d */
+
+#row-m, #row-t1, #row-t2 { display: none; }
+.row-m, row-t1, row-t2 { display: none; }
+
 } /***** Desktop view end ******/
 
+
 /********* Tablet view *********/
+
 @media only screen and (min-width: 768px) and (max-width: 991px) { 
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
@@ -293,6 +299,25 @@ h1 {
   .col-md-3 {
     width: 100%;
   } 
+  .row-t1 {
+  width: 50%;
+  height: 50%;
+  position: relative;
+  left: 10px;
+  right: 10px;
+  top: 10px; 
+  background-color: white;
+  }
+ .row-t2 {
+  width: 100%;
+  height: 50%;
+  position: relative;
+  left: 10px;
+  right: 10px;
+  top: 10px; 
+  background-color: white;
+  }
+
   .item-1-t, item-2-t, item-3-t {	
 	width: 40%;
     height: 200px;
@@ -330,9 +355,9 @@ h1 {
   #p1-t, #p2-t, #p3-t {
    width: 80%;
    height: 100px;
-   position: absolute;
-   margin-top: 100px;
-   top: 200px;  
+   margin-top: 50px;
+   position: relative;
+   top: 300px;  
    right: 10px;
    left: 40px;
    color: black;
@@ -418,7 +443,7 @@ h1 {
   }
 #row-t1 {
   width: 50%;
-  height: 100%;
+  height: 50%;
   position: relative;
   left: 10px;
   right: 10px;
@@ -427,13 +452,17 @@ h1 {
 }
 #row-t2 {
   width: 100%;
-  height: 100%;
+  height: 50%;
   position: relative;
   left: 10px;
   right: 10px;
   top: 10px; 
   background-color: white;
- }
+ }  
+
+#row-d, #row-m { display: none; }
+.row-d, row-m { display: none; }
+
 }  /****** End of @media of Tablet view ******/
 
 </style>
@@ -446,32 +475,23 @@ h1 {
   </header>  
    <section class="item1">
    <div class="row-d">
-   
-   <div class="row-m row-t1">  
-	<div class="item-1-t item-1-m item-1 col-lg-3 col-md-1 col-sm-1"> 
+		<div class="item-1-t item-1-m item-1 col-lg-3 col-md-1 col-sm-1"> 
         <div id="sta1"> Stella 1  </div>   
         <div id="sta1-t"> Stella 1 </div>  
 	    <div id="sta1-m"> Stella 1 </div>  
 		<p id="p1"> Stellae sunt pretiosae, inaestimabilis, unica et originalia . . . </p>   
         <p id="p1-t">Le stelle sono preziose, inestimabili, uniche e originali . . .  </p>  
         <p id="p1-m">Le stelle sono preziose, inestimabili, uniche e originali . . .  </p>  
-	  </div>
-     </div> 
-    
-    <div class="row-m row-t1"> 
-	<div class="item-2-m item-2-t item-2 col-lg-3 col-md-2 col-sm-2"> 
+	   </div>
+       <div class="item-2-m item-2-t item-2 col-lg-3 col-md-2 col-sm-2"> 
         <div id="sta2">Stella 2</div>   
 		<div id="sta2-t">Stella 2</div> 
         <div id="sta2-m">Stella 2</div>  
 		<p id="p2">Le stelle sono preziose, inestimabili, uniche e originali . . .  </p>
         <p id="p2-t">Le stelle sono preziose, inestimabili, uniche e originali . . .  </p>  
         <p id="p2-m">Le stelle sono preziose, inestimabili, uniche e originali . . .  </p>  
-     </div>
-    </div> 
-   
-  
-   <div class="row-m row-t2"> 
-    <div class="item-3-m item-3-t item-3 col-lg-3 col-md-3 col-sm-3">     
+       </div>
+         <div class="item-3-m item-3-t item-3 col-lg-3 col-md-3 col-sm-3">     
         <div id="sta3">Star 3</div> 
 		<div id="sta3-t">Star 3</div> 
 		<div id="sta3-m">Star 3</div> 
@@ -479,11 +499,40 @@ h1 {
         <p id="p3-t"> Stars are precious, priceless, unique and original . . . </p> 
         <p id="p3-m"> Stars are precious, priceless, unique and original . . . </p> 
       </div>
-     </div> 
-
-    </div>
-  
     </div> 
+
+   <div class="row-m row-t1">   
+	  <div class="item-1-t item-1-m item-1 col-lg-3 col-md-1 col-sm-1"> 
+        <div id="sta1"> Stella 1  </div>   
+        <div id="sta1-t"> Stella 1 </div>  
+	    <div id="sta1-m"> Stella 1 </div>  
+		<p id="p1"> Stellae sunt pretiosae, inaestimabilis, unica et originalia . . . </p>   
+        <p id="p1-t">Le stelle sono preziose, inestimabili, uniche e originali . . .  </p>  
+        <p id="p1-m">Le stelle sono preziose, inestimabili, uniche e originali . . .  </p>  
+	  </div>
+    </div>    
+    <div class="row-m row-t1"> 
+	  <div class="item-2-m item-2-t item-2 col-lg-3 col-md-2 col-sm-2"> 
+        <div id="sta2">Stella 2</div>   
+		<div id="sta2-t">Stella 2</div> 
+        <div id="sta2-m">Stella 2</div>  
+		<p id="p2">Le stelle sono preziose, inestimabili, uniche e originali . . .  </p>
+        <p id="p2-t">Le stelle sono preziose, inestimabili, uniche e originali . . .  </p>  
+        <p id="p2-m">Le stelle sono preziose, inestimabili, uniche e originali . . .  </p>  
+       </div>
+    </div> 
+   
+    <div class="row-m row-t2"> 
+      <div class="item-3-m item-3-t item-3 col-lg-3 col-md-3 col-sm-3">     
+        <div id="sta3">Star 3</div> 
+		<div id="sta3-t">Star 3</div> 
+		<div id="sta3-m">Star 3</div> 
+		<p id="p3"> Stars are precious, priceless, unique and original . . . </p> 
+        <p id="p3-t"> Stars are precious, priceless, unique and original . . . </p> 
+        <p id="p3-m"> Stars are precious, priceless, unique and original . . . </p> 
+       </div>
+     </div>  
+   
     </section>
 </body>
 </html>
